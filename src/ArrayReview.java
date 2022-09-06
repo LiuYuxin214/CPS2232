@@ -62,7 +62,7 @@ class ArrayReview {
     }
     /*
     Mark blue as 1 and other colors as 0,
-    put them into the arrayreview object,
+    put them into the ArrayReview object,
     and then calculate the number of 0 and 1,
     then calculate the proportion, and then draw a conclusion.
      */
