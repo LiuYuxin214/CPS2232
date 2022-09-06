@@ -4,7 +4,7 @@ public class RecursionExample2 {
     static void p() {
         count++;
         if (count <= 5) {
-            System.out.println("hello " + count);
+            System.out.println("hello 你好" + count);
             p();
         }
 
