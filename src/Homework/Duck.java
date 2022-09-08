@@ -2,7 +2,7 @@ package Homework;
 
 import java.util.Random;
 
-public class LiuYuxin1194048W04H1 {
+public class Duck {
     public static void duck(int n) {
         System.out.println("The duck jumped onto the stone " + n + ".");
         Random random = new Random();
