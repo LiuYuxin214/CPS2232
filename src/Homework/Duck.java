@@ -4,18 +4,21 @@ import java.util.Random;
 
 public class Duck {
     public static void duck(int n) {
-        System.out.println("The duck jumped onto the stone " + n + ".");
+        System.out.print("Stone " + n + " ");
         Random random = new Random();
-        int add = random.nextInt(10) + 1;
+        int endNum = random.nextInt(10) + 1;
+        int add = random.nextInt(endNum) + 1;
         if (n + add > 11) {
-            System.out.println("The duck jumped to the other bank.");
+            System.out.println();
         } else {
             duck(n + add);
         }
     }
 
     public static void main(String[] args) {
-        System.out.println("The duck began to jump on the stone.");
-        duck(1);
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Situation " + (i + 1) + ": ");
+            duck(1);
+        }
     }
 }
