@@ -1,4 +1,4 @@
-package Homework;
+package Chapter1;
 
 import java.util.Random;
 

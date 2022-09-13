@@ -1,4 +1,4 @@
-// Recursive Java program to check if the number is palindrome or not
+package Chapter1;// Recursive Java program to check if the number is palindrome or not
 
 import java.io.*;
 

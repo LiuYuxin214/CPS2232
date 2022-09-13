@@ -1,3 +1,5 @@
+package Chapter1;
+
 public class fibonacci {
     static int fibonacci(int n) {
         if (n <= 1) {
