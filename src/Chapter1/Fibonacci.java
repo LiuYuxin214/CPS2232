@@ -1,6 +1,6 @@
 package Chapter1;
 
-public class fibonacci {
+public class Fibonacci {
     static int fibonacci(int n) {
         if (n <= 1) {
             return n;
@@ -9,7 +9,7 @@ public class fibonacci {
     }
 
     public static void main(String[] args) {
-        int n = 9;
+        int n = 10;
         System.out.println(fibonacci(n));
     }
 }
