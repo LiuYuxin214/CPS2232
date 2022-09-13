@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class ListOfFruit {
+    //Create a class to store fruit prices and names
     ArrayList<String> name = new ArrayList<>();
     ArrayList<Double> price = new ArrayList<>();
 
@@ -16,11 +17,13 @@ class ListOfFruit {
     }
 
     public double getPrice(String name) {
+        //Find the price of fruit through the index of fruit name and its price
         return price.get(this.name.indexOf(name));
     }
 }
 
 class Order {
+    //Create a class to store the order information
     ArrayList<String> name = new ArrayList<>();
     ArrayList<Integer> num = new ArrayList<>();
     Double total = 0.0;
@@ -34,6 +37,7 @@ class Order {
     }
 
     public double calculateTotal(ListOfFruit list) {
+        //Use the fruit quantity and price list to calculate the total fruit price
         for (int i = 0; i < name.size(); i++) {
             total += num.get(i) * list.getPrice(name.get(i));
         }

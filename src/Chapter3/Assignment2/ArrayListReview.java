@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class ArrayListReview<T> {
+    //Create with the generic type of the passed class
     ArrayList<T> arrayList = new ArrayList<>();
     LinkedList<T> linkedList = new LinkedList<>();
 
