@@ -74,14 +74,14 @@ class ArrayListExample {
         describe_all(spheres);
 
         // Extra credit part: supersize different kinds of lists of shapes
-//         System.out.println();
-//         System.out.println("supersizing a list of rectangles");
-//         ArrayList<Rectangle> double_rects = supersized_list(rects);
-//         describe_all(double_rects);
-//         System.out.println();
-//         System.out.println("supersizing a list of spheres");
-//         ArrayList<Sphere> double_spheres = supersized_list(spheres);
-//         describe_all(double_spheres);
+        System.out.println();
+        System.out.println("supersizing a list of rectangles");
+        ArrayList<Rectangle> double_rects = supersized_list(rects);
+        describe_all(double_rects);
+        System.out.println();
+        System.out.println("supersizing a list of spheres");
+        ArrayList<Sphere> double_spheres = supersized_list(spheres);
+        describe_all(double_spheres);
     }
 
     static double total_area(ArrayList<? extends TwoDShape> shapes) {
@@ -112,5 +112,13 @@ class ArrayListExample {
         shapes.add(new Cone(0.0, 0.0));
         shapes.add(new Rectangle(0.0, 0.0));
         shapes.add(new Sphere(0.0));
+    }
+
+    static <T extends GeometricShape> ArrayList<T> supersized_list(ArrayList<? extends GeometricShape> shapes) {
+        ArrayList<T> result = new ArrayList<>();
+        for (int i = 0; i < shapes.size(); i++) {
+            result.add((T) shapes.get(i).supersized());
+        }
+        return result;
     }
 }

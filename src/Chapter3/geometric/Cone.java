@@ -20,4 +20,8 @@ public class Cone implements ThreeDShape {
         System.out.print(height);
         System.out.println("]");
     }
+
+    public Cone supersized() {
+        return new Cone(2.0 * radius, 2.0 * height);
+    }
 }

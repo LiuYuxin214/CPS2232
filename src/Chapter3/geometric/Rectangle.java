@@ -25,4 +25,8 @@ public class Rectangle implements TwoDShape {
         System.out.println("]");
     }
 
+    public GeometricShape supersized() {
+        return new Rectangle(width * 2.0, height * 2.0);
+    }
+
 }

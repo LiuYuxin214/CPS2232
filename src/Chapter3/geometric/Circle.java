@@ -1,5 +1,7 @@
 package Chapter3.geometric;
 
+import Chapter3.geometric.TwoDShape;
+
 public class Circle implements TwoDShape {
     private final double radius;
 
@@ -19,6 +21,10 @@ public class Circle implements TwoDShape {
         System.out.print("Circle[radius=");
         System.out.print(radius);
         System.out.println("]");
+    }
+
+    public GeometricShape supersized() {
+        return new Circle(radius * 2.0);
     }
 
 }

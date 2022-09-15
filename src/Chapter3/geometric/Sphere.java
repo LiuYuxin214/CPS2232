@@ -17,4 +17,8 @@ public class Sphere implements ThreeDShape {
         System.out.println("]");
     }
 
+    public GeometricShape supersized() {
+        return new Sphere(radius * 2.0);
+    }
+
 }

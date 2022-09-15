@@ -1,5 +1,6 @@
-package Chapter3.geometric;// You should add statements to this code as needed, so that
+// You should add statements to this code as needed, so that
 // the code compiles correctly, and runs without error.
+package Chapter3.geometric;
 
 class GoodArrayExample {
     public static void main(String[] args) {
