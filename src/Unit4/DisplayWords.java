@@ -13,9 +13,8 @@ public class DisplayWords {
             list.add(sc.next());
         }
         list.sort(null);
-        Iterator<String> it = list.iterator();
-        while (it.hasNext()) {
-            System.out.println(it.next());
+        for (int i = list.size() - 1; i >= 0; i--) {
+            System.out.println(list.get(i));
         }
     }
 }
