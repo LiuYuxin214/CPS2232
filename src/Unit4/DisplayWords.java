@@ -8,7 +8,7 @@ public class DisplayWords {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File(args[0]);
         Scanner sc = new Scanner(file);
-        LinkedList<String> list = new LinkedList();
+        LinkedList<String> list = new LinkedList<>();
         while (sc.hasNext()) {
             list.add(sc.next());
         }
