@@ -7,17 +7,6 @@ public class Q3<T> {
     int size = 0;
     int index = 0;
 
-    public static void main(String[] args) {
-        Q3<Character> list = new Q3<>();
-        list.add('A');
-        list.add('B');
-        list.add('C');
-        list.add('D');
-        System.out.println("Circular linked list nodes: ");
-        for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.next() + " ");
-        }
-    }
 
     public void add(T item) {
         list.add(item);
@@ -33,5 +22,17 @@ public class Q3<T> {
 
     public int size() {
         return size;
+    }
+
+    public static void main(String[] args) {
+        Q3<Character> list = new Q3<>();
+        list.add('A');
+        list.add('B');
+        list.add('C');
+        list.add('D');
+        System.out.println("Circular linked list nodes: ");
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.next() + " ");
+        }
     }
 }
