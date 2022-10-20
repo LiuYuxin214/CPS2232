@@ -5,3 +5,4 @@ public interface GeometricShape<T extends GeometricShape> {
 
     T supersized();
 }
+
