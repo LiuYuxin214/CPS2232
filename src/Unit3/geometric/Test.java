@@ -1,4 +1,4 @@
-package Unit3.geometric;// test class to make sure that the various classes of geometric objects
+package Unit3.geometric;// SelfAddTest class to make sure that the various classes of geometric objects
 // compile and execute OK
 
 class Test {
