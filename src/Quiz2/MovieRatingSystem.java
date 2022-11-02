@@ -146,7 +146,7 @@ class MovieDate implements Comparable<MovieDate> {
     }
 
     public String toString() {
-        return movieName + " " + year + " " + month;
+        return movieName + " " + year + "." + month;
     }
 
     public int compareTo(MovieDate o) {

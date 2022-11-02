@@ -22,6 +22,7 @@ public class JavaKeyWordCounter {
             }
         }
         TreeMap<String, Integer> sortedJavaKeyWordsCount = new TreeMap<>(javaKeyWordsCount);
+        System.out.println("The Java key word count is:");
         for (String key : sortedJavaKeyWordsCount.keySet()) {
             System.out.println(key + ": " + sortedJavaKeyWordsCount.get(key));
         }
